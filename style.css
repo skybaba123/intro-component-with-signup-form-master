@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(209, 209, 209);
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+
+  background: url("images/bg-intro-desktop.png") no-repeat;
+
+  background-color: hsl(0, 100%, 74%);
+}
+
+.form-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1rem 2rem 1rem;
+  height: 29.5rem;
+  width: 33rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.main-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 2rem;
+  line-height: 45px;
+}
+
+.sub-text {
+  color: rgb(231, 229, 229);
+  font-weight: 400;
+}
+
+.label {
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 1rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.label p {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.label p span {
+  color: rgb(228, 225, 225);
+  font-weight: 400;
+}
+
+input {
+  width: 28rem;
+  height: 3.5rem;
+  align-self: center;
+  border-radius: 3px;
+  border: 1px solid rgb(180, 178, 178);
+  padding-left: 2rem;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(117, 117, 117);
+}
+
+input:focus {
+  outline: 1px solid rgb(145, 138, 138);
+}
+
+.terms {
+  align-self: center;
+  margin-top: 1rem;
+  font-size: 13px;
+  color: rgb(184, 184, 184);
+  font-weight: 600;
+}
+
+.terms-red {
+  color: rgb(230, 80, 80);
+}
+
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .container {
+    width: 100%;
+    height: 70rem;
+    justify-content: center;
+  }
+  .main-text {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .sub-text {
+    margin-top: -4rem;
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+  }
+
+  .label {
+    width: 80%;
+    margin-left: 2.5rem;
+  }
+
+  .form-container {
+    width: 80%;
+    margin-left: 2.5rem;
+  }
+
+  .btn {
+    font-size: 10px;
+  }
+  .right-container {
+    margin-top: -4rem;
+  }
+  .terms {
+    text-align: center;
+  }
+
+  input {
+    width: 90%;
+  }
+}
